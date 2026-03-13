@@ -46,9 +46,7 @@ function buttonPressed(page) {
     audio.play();
 
     setTimeout(function() {
-        alert("Edit this button to go to: " + page);
-        // Example later:
-        // window.location.href = page + ".html";
+        window.location.href = page;
     }, 300);
 }
 </script>
@@ -62,15 +60,15 @@ function buttonPressed(page) {
 
     <div class="button-grid">
         <button onclick="buttonPressed('../index.html')">Main Page</button>
-        <button onclick="buttonPressed('page2')">Page 2</button>
-        <button onclick="buttonPressed('page3')">Page 3</button>
-        <button onclick="buttonPressed('page4')">Page 4</button>
+        <button onclick="buttonPressed('page2.html')">Page 2</button>
+        <button onclick="buttonPressed('page3.html')">Page 3</button>
+        <button onclick="buttonPressed('page4.html')">Page 4</button>
         <button onclick="buttonPressed('../crazyinf/index.html')">Crazy?</button>
-        <button onclick="buttonPressed('page6')">Page 6</button>
-        <button onclick="buttonPressed('page7')">Page 7</button>
-        <button onclick="buttonPressed('page8')">Page 8</button>
-        <button onclick="buttonPressed('page9')">Page 9</button>
-        <button onclick="buttonPressed('page10')">Page 10</button>
+        <button onclick="buttonPressed('page6.html')">Page 6</button>
+        <button onclick="buttonPressed('page7.html')">Page 7</button>
+        <button onclick="buttonPressed('page8.html')">Page 8</button>
+        <button onclick="buttonPressed('page9.html')">Page 9</button>
+        <button onclick="buttonPressed('page10.html')">Page 10</button>
     </div>
 
 </div>
