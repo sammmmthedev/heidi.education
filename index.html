@@ -16,16 +16,33 @@ body {
     padding: 20px;
     border: 3px solid black;   /* optional for extra 2000s energy */
 }
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
 </style>
+
+<script>
+function goToPage() {
+    var audio = new Audio("click.mp3");
+    audio.play();
+
+    setTimeout(function() {
+        window.location.href = "pageselector/index.html";
+    }, 300); // slight delay so sound plays
+}
+</script>
 </head>
 <body>
 
 <div class="content-box">
     <h1>Main Page</h1>
-    <p>Heidi is a major Bezowowowowowo Doo Doo Zipitty bop bop bop fan! who also loves educating the people if you love being informed on what is actually true come here such as the cow factory underneath Wyoming </p>
+    <p>Heidi is a major Bezowowowowowo Doo Doo Zipitty bop bop bop fan! who also loves educating the people if you love being informed on what is actually true come here such as the cow factory underneath Wyoming</p>
+
+    <button onclick="goToPage()">Enter Page Selector</button>
 </div>
-<button type="button" name="pageselect">
-	Page selector
-</button>
+
 </body>
 </html>
